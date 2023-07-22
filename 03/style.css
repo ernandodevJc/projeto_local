@@ -1,0 +1,81 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+body {
+    background: #262626;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+/*
+.foto img {
+    width: 500px;
+    height: 600px;
+}
+*/
+
+.box {
+    position: relative;
+    width: 80vw;
+    height: 70vh;
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+}
+
+.foto {
+    width: 20%;
+    border: 2.5px solid white;
+    padding: 4px;
+}
+
+.foto:first-of-type {
+    background: url(img/photo1.jpg) no-repeat center center;
+    background-size: cover;
+}
+
+.foto:nth-of-type(2) {
+    background: url(img/photo2.jpg) no-repeat center center;
+    background-size: cover;
+}
+
+.foto:nth-of-type(3) {
+    background: url(img/photo3.jpg) no-repeat center center;
+    background-size: cover;
+}
+
+.foto:nth-of-type(4) {
+    background: url(img/photo4.jpg) no-repeat center center;
+    background-size: cover;
+}
+
+.foto:nth-of-type(5) {
+    background: url(img/photo5.jpg) no-repeat center center;
+    background-size: cover;
+}
+
+.foto:first-of-type {
+    border-radius: 10px 0px 0px 10px;
+}
+
+.foto:last-of-type {
+    border-radius: 0px 10px 10px 0px;
+}
+
+.box:hover .foto {
+    filter: blur(4px);
+    opacity: .5;
+    transition: .3s;
+}
+
+.box .foto:hover {
+    width: 80%;
+    filter: blur(0);
+    opacity: 1;
+    border-radius: 10px;
+}
