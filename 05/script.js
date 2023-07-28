@@ -8,7 +8,7 @@ const user_number = document.getElementById('numero');
 
 
 if (lista_amigos.innerText === '') {
-    lista_amigos.innerHTML = '<p id="semAmigo">Nenhum amigo</p>';
+    lista_amigos.innerHTML = '<p id="semAmigo">Nenhum contato</p>';
     let sem_amigo = document.getElementById('semAmigo');
 }
 
