@@ -6,6 +6,7 @@
 }
 
 body {
+    position: relative;
     display: flex;
     background: #262626 url(img/fundo.png) no-repeat center center;
     justify-content: center;
@@ -73,6 +74,7 @@ body {
 }
 
 .card_amigo {
+    height: max-content;
     border-radius: 10px;
     display: flex;
     flex-direction: column;

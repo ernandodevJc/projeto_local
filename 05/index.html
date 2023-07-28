@@ -1,11 +1,14 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="cadastro.css">
     <title>Document</title>
 </head>
+
 <body>
     <div id="container">
         <div id="title">
@@ -81,9 +84,30 @@
         </div>
     </div>
 
-        <a href="" target="_blank" id="add-amigo">
-            <img src="img/add_amigo.png" alt="adicionar amigo">
-        </a>
+    <div id="add-amigo">
+        <img src="img/add_amigo.png" alt="adicionar amigo">
+    </div>
+
+    <div id="form">
+
+        <form id="name">
+            <label for="nome">Nome:</label>
+            <input type="text" name="nome" id="nome">
+        </form>
+
+        <form id="last_name">
+            <label for="sobrenome">Sobrenome:</label>
+            <input type="text" name="sobrenome" id="sobrenome">
+        </form>
+
+        <form id="number">
+            <label for="numero">Número:</label>
+            <input type="number" name="numero" id="numero">
+        </form>
+
+        <button id="button">Cadastrar</button>
+    </div>
     <script src="script.js"></script>
 </body>
+
 </html>
