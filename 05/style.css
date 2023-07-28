@@ -1,0 +1,115 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body {
+    display: flex;
+    background: #262626 url(img/fundo.png) no-repeat center center;
+    justify-content: center;
+    align-items: center;
+}
+
+#container {
+    backdrop-filter: blur(3px);
+    padding-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 1080px;
+    position: relative;
+}
+
+#add-amigo {
+    position: fixed;
+    width: 40px;
+    right: 20px;
+    bottom: 10px
+}
+
+#add-amigo img {
+    opacity: .8;
+    transition: .3s;
+    width: 100%;
+}
+
+#add-amigo img:hover {
+    opacity: 1;
+}
+
+#container #title {
+    font-size: 15px;
+    padding: 10px;
+}
+
+#title h1 {
+    font-weight: 400;
+}
+
+#semAmigo {
+    position: absolute;
+    color: rgb(224, 11, 75);
+    font-size: 20px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#amigos {
+    overflow-y: auto;
+    height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding-top: 20px;
+    width: 100%;
+}
+
+#amigos::-webkit-scrollbar, body::-webkit-scrollbar {
+    display: none;
+}
+
+.card_amigo {
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #fff;
+    width: 300px;
+}
+
+.card_amigo .foto {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.card_amigo .foto img {
+    width: 280px;
+    height: 280px;
+    border-radius: 50%;
+}
+
+.card_amigo .dados {
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+}
+
+.dados {
+    color: #fff;
+    font-variant: normal;
+}
+
+.dados strong {
+    font-weight: normal;
+    color: rgb(193, 191, 191);
+    font-size: 13px;
+}
