@@ -1,0 +1,127 @@
+* {
+    font-family: sans-serif;
+}
+
+body {
+    background: var(--color3);
+}
+
+:root {
+    --color1: #eecc60;
+    --color2: #fb6c34;
+    --color3: #62462b;
+    --color4: #f15e5e;
+    --color5: #98956c;
+}
+
+.container {
+    background: var(--color5);
+    max-width: 1200px;
+    position: relative;
+    margin: 40px auto;
+    padding: 40px 30px;
+}
+
+figure {
+    overflow: auto;
+}
+
+/* Seção header */
+
+.header {
+    text-align: center;
+}
+
+.main-title {
+    color: #fff;
+    font-size: 40px;
+}
+
+.sub-title {
+    color: #000;
+    font-style: italic;
+}
+
+/* Seção imagem destaque */
+
+figure {
+    padding: 40px 0;
+    margin: 40px 0;
+    text-align: center;
+}
+
+figure figcaption {
+    color: #000;
+}
+
+/* Seção informações sobre Jesus */
+.informacoes {
+    padding: 40px 0;
+    margin: 40px 0;
+    border-top: 2px dashed var(--color2);
+    border-bottom: 2px dashed var(--color2);
+}
+
+.informacoes h1 {
+    color: #fff;
+}
+
+strong {
+    color: var(--color3);
+}
+
+/* Seção citações */
+.citacao {
+    background: var(--color3);
+    padding: 40px 0;
+    margin: 40px 0;
+}
+
+blockquote {
+    font-size: 30px;
+    font-weight: bold;
+    color: var(--color1);
+}
+
+.citacao p {
+    font-style: italic;
+    padding: 0 30px;
+    color: #fff;
+}
+
+/* Seção curiosidades sobre Jesus */
+.curiosidades {
+    padding: 40px 0;
+    margin: 40px 0;
+    border-top: 2px dashed var(--color2);
+    border-bottom: 2px dashed var(--color2);
+}
+
+.curiosidades h1 {
+    color: #fff;
+}
+
+.curiosidades li {
+    min-height: 30px;
+}
+
+/* Seção imagem final */
+.img-bold figcaption {
+    color: #000;
+    font-weight: bold;
+}
+
+/* Mais informações */
+
+.more-info h1 {
+    color: var(--color3);
+}
+
+.more-info a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.more-info a:hover {
+    text-decoration: underline;
+}
