@@ -1,0 +1,160 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+:root {
+    --color: rgb(96, 0, 128);
+    --color2: #262626;
+}
+
+body {
+    background-color: #f0ecf9;
+}
+
+/* Header */
+.header {
+    background: var(--color);
+    text-align: left;
+    font-weight: bold;
+    height: 250px;
+    color: #fff;
+}
+
+.header h3 {
+    padding: 18px 15px;
+}
+
+/* Form container */
+
+.form-container {
+    position: absolute;
+    left: 50%;
+    margin: -100px 0;
+    transform: translate(-50%, 0%);
+    background: #fff;
+    width: 800px;
+    padding: 40px;
+}
+
+/* titulo form */
+
+.form-title {
+    margin: -40px -40px 0px -40px;
+    border: 1px solid gray;
+}
+
+.form-title h2 {
+    border-bottom: 1px solid var(--color);
+    padding: 13px;
+    font-weight: 300;
+    text-transform: uppercase;
+    color: var(--color);
+    font-size: 18px;
+    width: max-content;
+    margin: auto;
+}
+
+/* corpo do form */
+
+.requerid {
+    color: red;
+}
+
+.form-header h1 {
+    padding-top: 30px;
+}
+
+.form-header p {
+    padding: 15px 0px;
+    color: var(--color2);
+}
+
+.form-default {
+    margin-bottom: 20px;
+}
+
+label,
+input {
+    color: var(--color2);
+}
+
+input:focus,
+textarea:focus {
+    outline: none;
+}
+
+.form-default label,
+.form-textarea label {
+    padding: 8px 0px;
+    display: block;
+}
+
+.form-default input,
+.form-textarea input,
+.form-foto input {
+    border: none;
+    border-bottom: 1.5px solid gray;
+    height: 30px;
+    width: 300px;
+}
+
+/* tipo de cambio */
+.form-radio {
+    margin-bottom: 20px;
+}
+
+.radio {
+    margin-top: 15px;
+    display: flex;
+}
+
+.radio div {
+    padding-right: 5px;
+}
+
+/* opcionais */
+.form-checkbox {
+    padding: 20px 0px;
+}
+
+.full-checkbox {
+    padding: 20px 0px;
+    display: flex;
+    flex-direction: row;
+}
+
+.checkbox {
+    padding-right: 10px;
+}
+
+/* fotos do carro */
+
+.form-foto {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30px;
+}
+
+.form-foto label {
+    padding-bottom: 25px;
+}
+
+/* input de cadastrar */
+
+input[type="submit"] {
+    background: var(--color);
+    border: none;
+    color:#fff;
+    padding: 16px 20px;
+    cursor: pointer;
+}
+
+
+@media (max-width: 800px) {
+    .form-container {
+        width: auto;
+    }
+}

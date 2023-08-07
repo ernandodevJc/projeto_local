@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Venda seu carro</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="header">
+        <h3>Cadastre seu veículo para vender mais rápido!</h3>
+    </div>
+
+    <div class="form-container">
+        
+        <div class="form-title">
+            <h2>Formulário</h2>
+        </div>
+
+        <div class="form-header">
+            <h1>Venda fácil seu carro!</h1>
+            <p>Descreva as características e marque os opcionais que ele possui</p>
+        </div>
+
+        <form class="form-body" method="POST" action="register.php">
+
+            <div class="form-default">
+                <label for="titulo">Titulo do anúncio: <span class="requerid">*</span></label>
+                <input type="text" placeholder="Um título para anunciar seu carro" name="titulo" required>
+            </div>
+
+            <div class="form-default">
+                <label for="valor">Preço: <span class="requerid">*</span></label>
+                <input type="number" name="valor" placeholder="Defina o preço" required>
+            </div>
+
+            <div class="form-textarea">
+                <label for="descricao">Descrição: <span class="requerid">*</span></label>
+                <textarea name="descricao" cols="40" placeholder="Aqui você coloca os detalhes do veículo, como por exemplo se ele tem algun arranhão" required></textarea>
+            </div>
+
+            <div class="form-default">
+                <label for="marca">Marca: <span class="requerid">*</span></label>
+                <input type="text" placeholder="Digite a marca do veículo" name="marca" required>
+            </div>
+
+            <div class="form-default">
+                <label for="modelo">Modelo: <span class="requerid">*</span></label>
+                <input type="text" placeholder="Digite o modelo do veículo" name="modelo" required>
+            </div>
+
+            <div class="form-default">
+                <label for="kilometragem">Kilometragem: <span class="requerid">*</span></label>
+                <input type="text" placeholder="Digite a kilometragem do veículo" name="kilometragem" required>
+            </div>
+
+            <div class="form-default">
+                <label for="data">Data de compra: <span class="requerid">*</span></label>
+                <input type="date" name="data" required>
+            </div>
+
+            <div class="form-radio">
+                <label for="cambio">Tipo de câmbio: <span class="requerid" required>*</span></label>
+                <div class="radio">
+                    <div>
+                        <input type="radio" name="cambio">
+                        <label for="cambio">Manual</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="cambio">
+                        <label for="cambio">Automático</label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-checkbox">
+                <label for="opcionais">Opcionais:</label>
+                <div class="full-checkbox">
+                    <div class="checkboxOne">
+                        <div class="checkbox">
+                            <input type="checkbox" name="opcionais[]">
+                            <label for="checkbox">Airbag</label>
+                        </div>
+                        <div class="checkbox">
+                            <input type="checkbox" name="opcionais[]">
+                            <label for="checkbox">Alarme</label>
+                        </div>
+                        <div class="checkbox">
+                            <input type="checkbox" name="opcionais[]">
+                            <label for="checkbox">Ar Condicionado</label>
+                        </div>
+                        <div class="checkbox">
+                            <input type="checkbox" name="opcionais[]">
+                            <label for="checkbox">Câmera de Ré</label>
+                        </div>
+                    </div>
+                    <div class="checkboxTwo">
+                        <div class="checkbox">
+                            <input type="checkbox" name="opcionais[]">
+                            <label for="checkbox">Assistente de Pista</label>
+                        </div>
+                        <div class="checkbox">
+                            <input type="checkbox" name="opcionais[]">
+                            <label for="checkbox">Partida Keyless</label>
+                        </div>
+                        <div class="checkbox">
+                            <input type="checkbox" name="opcionais[]">
+                            <label for="checkbox">Integração com o celular</label>
+                        </div>
+                        <div class="checkbox">
+                            <input type="checkbox" name="opcionais[]">
+                            <label for="checkbox">Banco de couro</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-foto">
+                <label for="foto">Fotos do carro: <span class="requerid">*</span></label>
+                <input type="file" name="foto" required>
+            </div>
+
+            <input type="submit" value="CADASTRAR">
+
+        </form>
+    </div>
+</body>
+</html>
