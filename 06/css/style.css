@@ -26,6 +26,10 @@ figure {
     overflow: auto;
 }
 
+figure::-webkit-scrollbar {
+    display: none;
+}
+
 /* Seção header */
 
 .header {
@@ -63,7 +67,7 @@ figure figcaption {
 }
 
 .informacoes h1 {
-    color: #fff;
+    color: #814a06;
 }
 
 strong {
@@ -98,7 +102,7 @@ blockquote {
 }
 
 .curiosidades h1 {
-    color: #fff;
+    color: #814a06;
 }
 
 .curiosidades li {
