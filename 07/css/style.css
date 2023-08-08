@@ -86,10 +86,20 @@ textarea:focus {
     outline: none;
 }
 
+textarea {
+    padding: 2px;
+}
+
 .form-default label,
 .form-textarea label {
     padding: 8px 0px;
     display: block;
+}
+
+.form-default,
+.form-textarea {
+    margin-top: 40px;
+    margin-bottom: 40px
 }
 
 .form-default input,
@@ -127,7 +137,8 @@ textarea:focus {
 }
 
 .checkbox {
-    padding-right: 10px;
+    padding: 8px 2px 8px 0px;
+    
 }
 
 /* fotos do carro */
@@ -157,4 +168,16 @@ input[type="submit"] {
     .form-container {
         width: auto;
     }
+
+    .form-default input,
+.form-textarea input,
+.form-foto input {
+    width: 100%;
 }
+}
+/* 
+@media (max-width: 500px) {
+    .form-container {
+        width: 100%;
+    }
+} */
