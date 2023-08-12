@@ -1,0 +1,326 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+:root {
+    --color: #61b872;
+}
+
+.container {
+    max-width: 900px;
+}
+
+/* cabeçalho */
+
+header {
+    display: flex;
+    justify-content: space-between;
+    background: #262626;
+    padding: 15px 30px;
+}
+
+picture {
+    width: 60px;
+}
+
+picture img {
+    width: 100%;
+}
+
+nav {
+    height: 60px;
+}
+
+nav a {
+    border-radius: 6px;
+    padding: 15px;
+    line-height: 60px;
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+nav a:hover {
+    color: green;
+}
+
+nav .enter {
+    background: var(--color);
+}
+
+nav .enter:hover {
+    color: #fff;
+}
+
+/* apresentação inical da empresa hdr*/
+.apresentacao {
+    background: url(../img/mainbanner.png) no-repeat center center;
+    background-size: cover;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    text-align: center;
+    font-size: 1.3rem;
+    text-shadow: 2px 2px 2px black;
+}
+
+/* beneficios  */
+
+.beneficios {
+    padding: 120px 30px;
+    margin: 80px 0;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.beneficios div {
+    text-align: center;
+    width: 300px;
+    margin-bottom: 30px;
+}
+
+.beneficios div h3 {
+    margin-bottom: 20px;
+}
+
+.beneficios div p {
+    color: #454444;
+}
+
+/* valor e preços */
+.planos-precos {
+    text-align: center;
+}
+
+.planos-precos h1 {
+    font-size: 40px;
+}
+
+.planos-precos p {
+    font-size: 20px;
+    font-weight: 300;
+    color: #262626;
+}
+
+.planos-precos .tabela-planos {
+    padding: 80px 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.plano {
+    position: relative;
+    width: 280px;
+    margin-bottom: 100px;
+}
+
+.plano .plano-type {
+    background: #262626;
+    color: #fff;
+}
+
+.plano .plano-type p {
+    width: 100px;
+    height: 100px;
+    color: #f2e3e3;
+    font-size: 16px;
+    font-weight: 700;
+    background: green;
+    line-height: 100px;
+    border-radius: 50%;
+    position: absolute;
+    left: 50%;
+    top: -50px;
+    transform: translate(-50%);
+}
+
+.plano-info {
+    background: rgb(188, 186, 186);
+    color: #000;
+    padding: 10px 0;
+}
+
+.plano-info p {
+    font-size: 15px;
+    padding: 10px 0;
+}
+
+#plus-value,
+#plus-more {
+    background: red;
+}
+
+.plano .plano-type h2 {
+    text-transform: uppercase;
+    padding: 60px 0 10px 0;
+    font-weight: bolder;
+    font-size: 20px;
+}
+
+.plano .plano-sabermais {
+    background: green;
+    padding: 20px 5px;
+    color: #fff;
+}
+
+/* form dominio */
+
+.dominio {
+    background: #253343;
+    padding: 100px 0;
+    text-align: center;
+}
+
+.form-dominio {
+    margin: auto;
+}
+
+.form-dominio h1 {
+    color: #fff;
+    font-size: 40px;
+}
+
+.form-dominio p {
+    color: gray;
+    font-size: 20px;
+    padding: 10px 0;
+}
+
+.form-dominio form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-dominio form input[type="text"] {
+    padding: 15px;
+    font-size: 20px;
+    width: 90%;
+    margin: 30px auto;
+    border-radius: 6px;
+}
+
+form input[type="text"]:focus,
+form input[type="email"]:focus,
+form textarea:focus {
+    outline: none;
+}
+
+.form-dominio form input[type="submit"] {
+    width: max-content;
+    color: #fff;
+    background: var(--color);
+    border: none;
+    font-size: 22px;
+    padding: 10px;
+    border-radius: 8px;
+    margin: auto;
+    transition: .3s;
+    cursor: pointer;
+}
+
+.form-dominio form input[type="submit"]:hover {
+    background: green;
+}
+
+/* area de contato */
+.msg {
+    padding: 50px auto 10px auto;
+    margin: 50px auto 10px auto;
+    text-align: center;
+}
+
+.msg h1 {
+    font-size: 35px;
+    color: #272626;
+}
+
+.msg p {
+    color: #636262;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.msg form {
+    text-align: center;
+    padding-top: 50px;
+}
+
+.msg form input[type="submit"],
+textarea {
+    display: block;
+    margin: auto;
+}
+
+.msg form input[type="text"],
+.msg form input[type="email"] {
+    padding: 8px 10px;
+    width: 120px;
+    font-size: 15px;
+    border-radius: 4px;
+    border: 1px solid gray;
+}
+
+.msg form input[type="text"] {
+    margin-right: 10px;
+}
+
+.msg form textarea {
+    width: 280px;
+    margin: 20px auto;
+    padding: 10px;
+    border-radius: 4px;
+}
+
+.msg input[type="submit"] {
+    background: #40aa55;
+    border: none;
+    color: #fff;
+    padding: 6px;
+    width: 150px;
+    font-size: 15px;
+    border-radius: 4px;
+}
+
+/* footer  */
+footer {
+    padding: 30px 0;
+    text-align: center;
+    font-weight: 600;
+    color: #454444;
+}
+
+@media screen and (max-width: 550px) {
+
+    /* cabeçalho */
+    header {
+        padding: 15px;
+    }
+
+    header picture {
+        width: 40px;
+    }
+
+
+    nav {
+        height: 40px;
+    }
+
+    nav a {
+        border-radius: 6px;
+        padding: 8px;
+        line-height: 40px;
+        text-decoration: none;
+        color: #fff;
+        text-transform: uppercase;
+        font-size: 11px;
+    }
+
+}
